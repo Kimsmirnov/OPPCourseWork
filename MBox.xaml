@@ -1,0 +1,33 @@
+﻿<Window x:Class="OopCourseWork.MBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OopCourseWork"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="" MaxHeight="142" MinHeight="142" MaxWidth="290" MinWidth="290">
+    <Grid Height="126" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="95*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" >
+                <GradientStop Color="#310D42" Offset="0"/>
+                <GradientStop Color="#673F52" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border MaxWidth="200" MinWidth="200" Margin="9,0,9,0" Background="White" VerticalAlignment="Center" Padding="10" CornerRadius="20" MaxHeight="90" MinHeight="90" Grid.ColumnSpan="2">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#FF63ADD4" ShadowDepth="0" />
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Registration completed!" FontSize="15" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+                <Grid Margin="0 0 0 20">
+                    <Button x:Name="LoginButton" HorizontalAlignment="Center" Content="OK" Width="50" Height="30" Click="LoginButton_Click"></Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

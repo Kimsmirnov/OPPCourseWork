@@ -1,0 +1,31 @@
+﻿<Window x:Class="OopCourseWork.DeleteClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OopCourseWork"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="DeleteClient" MinHeight="393.902" MinWidth="623.197" MaxHeight="393.902" MaxWidth="623.197">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0" >
+                <GradientStop Color="#310D42" Offset="0"/>
+                <GradientStop Color="#673F52" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border MinWidth="300" Margin="15,0,15,69" Background="White" Padding="30" MaxWidth="520" CornerRadius="20" Height="240" VerticalAlignment="Bottom">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="#FF63ADD4" ShadowDepth="0" />
+            </Border.Effect>
+            <StackPanel Height="100" Orientation="Horizontal" VerticalAlignment="Top" Margin="10 0">
+                <TextBlock Text="Enter ID for deletion!" FontSize="30" FontWeight="Bold" Width="440"/>
+                <Grid>
+
+                    <Button x:Name="DeletButton"  Content="Delete" Margin="-346,127,347,-59" Click="DeletButton_Click" />
+                    <TextBox x:Name="IDforDeletion" materialDesign:HintAssist.Hint="Enter ID Here" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="115" Height="46" Margin="-272,76,421,-22"/>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
